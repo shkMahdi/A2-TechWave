@@ -38,8 +38,7 @@ html {
 
 /* Navbar */
 nav {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px;
     background-color: #1A0B2E;
     border-bottom: 1px solid #412567;
 }
@@ -58,6 +57,7 @@ nav {
 .nav-logo {
     cursor: pointer;
 }
+
 #logo-1stpart {
     background: linear-gradient(30deg, #F7E93F, #FB09B4, #FB09B4);
     background-clip: text;
@@ -92,6 +92,77 @@ nav {
     font-weight: 500;
 }
 
+/* banner */
+#banner {
+    background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 760px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.btn-sub {
+    color: #00ff88;
+    background-color: transparent;
+    border: 1px solid #00ff88;
+    margin-left: .5rem;
+    padding: .68rem 1rem;
+}
+
+.pod-description h2 {
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    margin-top: 2.5rem;
+}
+
+.pod-description p {
+    margin-bottom: 24px;
+}
+
+.banner-container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pod-mick {
+    position: relative;
+    max-width: 350px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+
+.mick-bg {
+    max-width: 350px;
+    max-height: 350px;
+    display: block;
+}
+
+.mick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115px;
+}
+
+.badge {
+    background-color: #00ff88;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A0B2E;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1000px;
+    position: absolute;
+    top: 20%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+}
 
 /* ------------- Responsive Styling -------------*/
 /* Navbar */
@@ -106,7 +177,32 @@ nav {
         display: contents;
         cursor: pointer;
     }
+
     nav {
         padding: 20px;
+    }
+}
+
+/* Banner */
+@media screen and (max-width: 576px) {
+    #banner {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .pod-mick,
+    .mick-bg {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .mick {
+        max-width: 3rem;
+    }
+
+    .pod-description h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: .5rem;
+        margin-top: 1.5rem;
     }
 }
