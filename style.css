@@ -166,6 +166,19 @@ nav {
     top: 20%;
     left: 92%;
     transform: translate(-50%, -50%);
+     animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 /* About Podcast */
@@ -660,9 +673,11 @@ footer {
 /* footer */
 @media screen and (max-width: 576px) {
 
-    /* footer {
-        height: 300px;
-    } */
+    footer {
+        background-size: 150% 300px;
+        background-position: center 10%; 
+        min-height: 200px;
+    }
     .footer-container {
         padding: 40px 20px;
     }
@@ -672,11 +687,10 @@ footer {
     }
 
     .platforms {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
         gap: 1rem;
-
+        text-align: center;
     }
 
     .about-des br {
