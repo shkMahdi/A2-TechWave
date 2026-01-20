@@ -24,7 +24,7 @@ html {
 }
 
 .solid-white {
-    color:  rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .gradient {
@@ -228,48 +228,116 @@ hr {
     margin-bottom: 2rem;
 }
 
+/* Why choose techwave */
+#why-choose {
+    background-color: #230E3D;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#why-choose h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.why-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.why-des {
+    line-height: 1.5rem;
+}
+
+.why-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.why-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 255px 255px 270px);
+}
+
+.b-0 {
+    align-content: center;
+    grid-row: span 2;
+}
+
+.b-1 {
+    grid-column: span 2;
+}
+
+.b-2 {
+    grid-column: span 2;
+}
+
+.b-3 {
+    grid-column: span 2;
+}
+
 /* Meet the host */
 #meet-host {
     background-color: #1A0B2E;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .host-container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .host-heading {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
 }
+
 .host-name {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .host-des {
     font-size: 1rem;
     line-height: 24px;
     margin-bottom: 1rem;
 }
+
 .host-card {
-    background-color:rgba(53, 17, 101, 0.4);
+    background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
     border-radius: 40px;
 }
+
 .host-socials {
     gap: 8px;
 }
 
 .img-box {
-   height: 40px;
-   width: 40px;
-   border: 1px solid #533C72;
-   border-radius: 1000px;
-   background-color: transparent;
-   text-align: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #533C72;
+    border-radius: 1000px;
+    background-color: transparent;
+    text-align: center;
 }
 
 .img-box img {
@@ -277,6 +345,7 @@ hr {
     margin-top: 10px;
     cursor: pointer;
 }
+
 .host-card {
     gap: 24px;
 }
@@ -411,8 +480,31 @@ footer {
     .num {
         font-size: 40px;
     }
+
     .txt {
         font-size: .8rem;
+    }
+}
+
+/* Why Choose TechWave */
+@media screen and (max-width: 576px) {
+    .why-card-container {
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 287px 215px 215px 311px 215px);
+    }
+    #why-choose {
+        padding: 20px;
+    }
+    .why-heading {
+        font-size: 22px;
+    }
+    .why-card {
+        padding: 1.5rem;
+    }
+    .b-0, .b-1, .b-2, .b-3, .b-4 {
+        grid-row: span 1;
+        grid-column: span 1;
     }
 }
 
@@ -426,14 +518,17 @@ footer {
     #meet-host {
         padding: 35px 20px;
     }
+
     .host-heading {
         font-size: 2rem;
     }
+
     .host-name {
         font-size: 1.5rem;
     }
+
     .host-socials {
-       justify-content: center;
+        justify-content: center;
     }
 }
 
