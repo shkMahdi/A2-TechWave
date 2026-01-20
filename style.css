@@ -270,7 +270,7 @@ hr {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 255px 255px 270px);
+    grid-template-rows: repeat(3, auto);
 }
 
 .b-0 {
@@ -491,10 +491,13 @@ footer {
     .why-card-container {
         gap: 30px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 287px 215px 215px 311px 215px);
+        grid-template-rows: repeat(5, auto);
     }
     #why-choose {
-        padding: 20px;
+        padding: 40px 20px;
+    }
+    #why-choose h2 {
+        font-size: 2rem;
     }
     .why-heading {
         font-size: 22px;
